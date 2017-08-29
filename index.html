@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Dictionary Word</title>
+
+
+    <script src="dictionary.js"></script>
+    <script>
+    
+    function randomWord(dict){
+    var length = dict.length;
+
+    var randomNumer = Math.floor((Math.random() * (length - 1))+1);
+
+    return dict[randomNumer];
+}
+   
+
+
+    
+    </script>
+
+
+</head>
+<body>
+    <h1>Get random word from the dictionary.</h1>  
+
+    <p id="dictWord">Word will go here when button is clicked below!</p>
+    
+   <button onclick="getElementById('dictWord').innerHTML = randomWord(dictionary_english);" type="button">Get Word</button>
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
